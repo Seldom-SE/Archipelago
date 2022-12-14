@@ -1,6 +1,7 @@
 from BaseClasses import Entrance, Region, RegionType
 from worlds.AutoWorld import World
 from .Items import item_name_to_id, location_name_to_id, Civ6Item
+from .Mod import generate_mod
 
 class Civ6(World):
     """
@@ -34,3 +35,6 @@ class Civ6(World):
         self.multiworld.completion_condition[self.player] = (
             lambda state: state.has("Victory", self.player)
         )
+
+    def generate_output(self, output_directory: str) -> None:
+        generate_mod(self, output_directory)

@@ -180,6 +180,7 @@ UPDATE
     CivicType
 #END
     = "$TYPE$";
+#END
 
 DROP TABLE Technologies;
 
