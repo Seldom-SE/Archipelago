@@ -500,6 +500,12 @@ def get_items_locations(multiworld, player):
                 weights[0] = 0
             if len(choices[1]) == 0:
                 weights[1] = 0
-            items.append(multiworld.random.choice(multiworld.random.choices(choices, weights, k=1)[0]))
+            if weights == [0, 0, 0]:
+                weights = [0, 0, 1]
+            choice_list = multiworld.random.choices(choices, weights, k=1)[0]
+            item = multiworld.random.choice(choice_list)
+            if item != "50 Silver":
+                choice_list.remove(item)
+            items.append(item)
 
     return items, locations

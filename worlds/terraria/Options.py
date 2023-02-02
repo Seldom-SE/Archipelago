@@ -32,7 +32,7 @@ class BasicItemsWeight(Range):
     (those not created by combining accessories).
     """
     range_end = 100
-    default = 0
+    default = 100
 
 
 class CombinationAccessoryWeight(Range):
@@ -41,7 +41,7 @@ class CombinationAccessoryWeight(Range):
     This determines the chance of extra items added to the pool being combination accessories.
     """
     range_end = 100
-    default = 100
+    default = 0
 
 
 class FiftySilverWeight(Range):
