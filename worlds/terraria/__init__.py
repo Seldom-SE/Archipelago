@@ -27,13 +27,13 @@ class TerrariaWorld(World):
     # data_version is used to signal that items, locations or their names
     # changed. Set this to 0 during development so other games' clients do not
     # cache any texts, then increase by 1 for each release that makes changes.
-    data_version = 2
+    data_version = 3
 
     item_name_to_id = item_name_to_id
     location_name_to_id = location_name_to_id
 
     def generate_early(self) -> None:
-        self.ter_items, self.ter_locations = get_items_locations(self.multiworld.goal[self.player].value, self.multiworld.achievements[self.player].value, self.multiworld.fill_extra_checks_with[self.player].value)
+        self.ter_items, self.ter_locations = get_items_locations(self.multiworld, self.player)
 
     def create_item(self, name: str) -> TerrariaItem:
         classification = ItemClassification.useful

@@ -1,5 +1,6 @@
-from Options import Choice, Option
+from Options import Choice, Option, Range, ItemSet
 import typing
+
 
 class Goal(Choice):
     """The victory condition for your run. Stuff after the goal will not be shuffled."""
@@ -9,6 +10,7 @@ class Goal(Choice):
     option_moon_lord = 2
     option_zenith = 3
     default = 2
+
 
 class Achievements(Choice):
     """
@@ -22,18 +24,47 @@ class Achievements(Choice):
     option_all = 3
     default = 1
 
-class FillExtraChecksWith(Choice):
+
+class BasicItemsWeight(Range):
     """
-    Applies if you have achievements enabled. "Useful Items" helps to make the early game less grindy.
-    Items are rewarded to all players in your Terraria world.
+    Applies if you have achievements enabled.
+    This determines the chance of extra items added to the pool being basic items
+    (those not created by combining accessories).
     """
-    display_name = "Fill Extra Checks With"
-    option_filler_items = 0
-    option_useful_items = 1
-    default = 1
+    range_end = 100
+    default = 0
+
+
+class CombinationAccessoryWeight(Range):
+    """
+    Applies if you have achievements enabled.
+    This determines the chance of extra items added to the pool being combination accessories.
+    """
+    range_end = 100
+    default = 100
+
+
+class FiftySilverWeight(Range):
+    """
+    Applies if you have achievements enabled.
+    This determines the chance of extra items added to the pool being "50 Silver."
+    """
+    range_end = 100
+    default = 0
+
+
+class GuaranteedItems(ItemSet):
+    """
+    Applies if you have achievements enabled.
+    Items placed in this list will be guaranteed to be added to the item pool (if they all fit).
+    """
+
 
 options: typing.Dict[str, type(Option)] = {
     "goal": Goal,
     "achievements": Achievements,
-    "fill_extra_checks_with": FillExtraChecksWith,
+    "basic_items_weight": BasicItemsWeight,
+    "combination_accessory_weight": CombinationAccessoryWeight,
+    "fifty_silver_weight": FiftySilverWeight,
+    "guaranteed_items": GuaranteedItems
 }

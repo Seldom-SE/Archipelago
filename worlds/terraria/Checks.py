@@ -48,80 +48,198 @@ post_moon_lord_items = [
     "Post-Moon Lord"
 ]
 
-item_items = [
-    "Hermes Boots",
-    "Magic Mirror",
-    "Cloud in a Bottle",
-    "Grappling Hook",
-    "Climbing Claws",
-    "Fledgling Wings",
-    "Demon Conch",
-    "Magic Conch",
-    "Anklet of the Wind",
-    "Aglet",
-    "Ice Skates",
-    "Lava Charm",
-    "Obsidian Rose",
-    "Nature's Gift",
-    "Feral Claws",
-    "Magma Stone",
-    "Shark Tooth Necklace",
-    "Cobalt Shield",
-    "Band of Regeneration",
-    "Philosopher's Stone",
-    "Cross Necklace",
-    "Magic Quiver",
-    "Rifle Scope",
-    "Celestial Magnet",
-    "Rod of Discord",
-    "Flying Carpet",
-    "Lifeform Analyzer",
-    "Ancient Chisel",
-    "Moon Charm",
-    "Neptune's Shell",
-    "Shoe Spikes",
-    "Tabi",
-    "Black Belt",
-    "Flesh Knuckles",
-    "Putrid Scent",
-    "Paladin's Shield",
-    "Frozen Turtle Shell",
-    "Star Cloak",
-    "Discount Card",
-    "Red Counterweight",
-    "Yoyo Glove",
-    "Depth Meter",
-    "Compass",
-    "Radar",
-    "DPS Meter",
-    "Metal Detector",
-    "Sextant",
-    "Stopwatch",
-    "Tally Counter",
-    "Fisherman's Pocket Guide",
-    "High Test Fishing Line",
-    "Angler Earring",
-    "Tackle Box",
-    "Lavaproof Fishing Hook",
-    "Weather Radio",
-    "Blindfold",
-    "Pocket Mirror",
-    "Vitamins",
-    "Armor Polish",
+base_items = [
     "Adhesive Bandage",
+    "Aglet",
+    "Ancient Chisel",
+    "Angler Earring",
+    "Anklet of the Wind",
+    "Apprentice's Scarf",
+    "Armor Polish",
+    "Balloon Pufferfish",
+    "Band of Regeneration",
+    "Band of Starpower",
     "Bezoar",
-    "Nazar",
-    "Megaphone",
-    "Trifold Map",
-    "Fast Clock",
+    "Black Belt",
+    "Blindfold",
+    "Blizzard in a Bottle",
     "Brick Layer",
+    "Celestial Magnet",
+    "Climbing Claws",
+    "Cloud in a Bottle",
+    "Cobalt Shield",
+    "Compass",
+    "Cross Necklace",
+    "DPS Meter",
+    "Demon Conch",
+    "Depth Meter",
+    "Discount Card",
+    "Dunerider Boots",
     "Extendo Grip",
-    "Paint Sprayer",
-    "Portable Cement Mixer",
-    "Treasure Magnet",
-    "Step Stool",
+    "Eye of the Golem",
+    "Fast Clock",
+    "Feral Claws",
+    "Fisherman's Pocket Guide",
+    "Fledgling Wings",
+    "Flesh Knuckles",
+    "Flipper",
+    "Flower Boots",
+    "Flurry Boots",
+    "Flying Carpet",
+    "Frog Leg",
+    "Frozen Turtle Shell",
     "Gold Ring",
+    "Grappling Hook",
+    "Hand Warmer",
+    "Hercules Beetle",
+    "Hermes Boots",
+    "High Test Fishing Line",
+    "Honey Comb",
+    "Huntress's Buckler",
+    "Ice Skates",
+    "Inner Tube",
+    "Jellyfish Necklace",
+    "Lava Charm",
+    "Lavaproof Fishing Hook",
+    "Lifeform Analyzer",
     "Lucky Coin",
+    "Lucky Horseshoe",
+    "Magic Conch",
+    "Magic Mirror",
+    "Magic Quiver",
+    "Magiluminescence",
+    "Magma Stone",
+    "Megaphone",
+    "Metal Detector",
+    "Monk's Belt",
+    "Moon Charm",
+    "Moon Stone",
+    "Nature's Gift",
+    "Nazar",
+    "Necromantic Scroll",
+    "Neptune's Shell",
+    "Obsidian Rose",
+    "Obsidian Skull",
+    "Paint Sprayer",
+    "Paladin's Shield",
+    "Panic Necklace",
+    "Philosopher's Stone",
+    "Pocket Mirror",
+    "Pocket Mirror",
+    "Portable Cement Mixer",
+    "Putrid Scent",
+    "Pygmy Necklace",
+    "Radar",
+    "Ranger Emblem",
+    "Red Counterweight",
+    "Rifle Scope",
+    "Rocket Boots",
+    "Rod of Discord",
+    "Sailfish Boots",
+    "Sandstorm in a Bottle",
+    "Sextant",
+    "Shackle",
+    "Shark Tooth Necklace",
+    "Shiny Red Balloon",
+    "Shoe Spikes",
+    "Sorcerer Emblem",
+    "Squire's Shield",
+    "Star Cloak",
+    "Step Stool",
+    "Stopwatch",
+    "Summoner Emblem",
+    "Sun Stone",
+    "Tabi",
+    "Tackle Box",
+    "Tally Counter",
+    "Titan Glove",
+    "Treasure Magnet",
+    "Trifold Map",
+    "Tsunami in a Bottle",
+    "Vitamins",
+    "Warrior Emblem",
+    "Water Walking Boots",
+    "Weather Radio",
+    "White String",
+    "Yoyo Glove",
+
+]
+
+combination_items = [
+    "Ankh Charm",
+    "Ankh Shield",
+    "Amber Horseshoe Balloon",
+    "Amphibian Boots",
+    "Arcane Flower",
+    "Arctic Diving Gear",
+    "Armor Bracing",
+    "Avenger Emblem",
+    "Bee Cloak",
+    "Berserker's Glove",
+    "Blizzard in a Balloon",
+    "Blue Horseshoe Balloon",
+    "Celestial Cuffs",
+    "Celestial Emblem",
+    "Celestial Stone",
+    "Celestial Shell",
+    "Charm of Myths",
+    "Cloud in a Balloon",
+    "Coin Ring",
+    "Countercurse Mantra",
+    "Destroyer Emblem",
+    "Diving Gear",
+    "Fairy Boots",
+    "Fart in a Balloon",
+    "Fart in a Jar",
+    "Fire Gauntlet",
+    "Frog Flipper",
+    "Frog Gear",
+    "Frog Webbing",
+    "Frostspark Boots",
+    "Greedy Ring",
+    "Green Horseshoe Balloon",
+    "Hellfire Treads",
+    "Hero Shield",
+    "Honey Balloon",
+    "Jellyfish Diving Gear",
+    "Lava Waders",
+    "Lightning Boots",
+    "Magic Cuffs",
+    "Magnet Flower",
+    "Magma Skull",
+    "Mana Cloak",
+    "Mana Flower",
+    "Mana Regeneration Band",
+    "Master Ninja Gear",
+    "Mechanical Glove",
+    "Medicated Bandage",
+    "Molten Charm",
+    "Molten Quiver",
+    "Molten Skull Rose",
+    "Moon Shell",
+    "Neptune's Shell",
+    "Obsidian Horseshoe",
+    "Obsidian Shield",
+    "Obsidian Skull Rose",
+    "Obsidian Water Walking Boots",
+    "Papyrus Scarab",
+    "Pink Horseshoe Balloon",
+    "Power Glove",
+    "Recon Scope",
+    "Sandstorm in a Balloon",
+    "Sharkron Balloon",
+    "Sniper Scope",
+    "Spectre Boots",
+    "Stalker's Quiver",
+    "Star Veil",
+    "Stinger Necklace",
+    "Sweetheart Necklace",
+    "Terraspark Boots",
+    "The Plan",
+    "Tiger Climbing Gear",
+    "White Horseshoe Balloon",
+    "Yellow Horseshoe Balloon",
+    "Yoyo Bag",
 ]
 
 # Debugging utility
@@ -274,11 +392,13 @@ post_moon_lord_achievements = [
     "You and What Army?",
 ]
 
+
 def register(names, name_to_id, next_id):
     for name in names:
         name_to_id[name] = next_id
         next_id += 1
     return next_id
+
 
 def assign_ids():
     next_id = 0x7E0000
@@ -291,7 +411,8 @@ def assign_ids():
     next_id = register(post_wall_of_flesh_items, item_name_to_id, next_id)
     next_id = register(post_plantera_items, item_name_to_id, next_id)
     next_id = register(post_moon_lord_items, item_name_to_id, next_id)
-    next_id = register(item_items, item_name_to_id, next_id)
+    next_id = register(base_items, item_name_to_id, next_id)
+    next_id = register(combination_items, item_name_to_id, next_id)
 
     next_id = register(prehardmode_locations, location_name_to_id, next_id)
     next_id = register(post_wall_of_flesh_locations, location_name_to_id, next_id)
@@ -309,15 +430,23 @@ def assign_ids():
 
     return item_name_to_id, location_name_to_id
 
+
 item_name_to_id, location_name_to_id = assign_ids()
+
 
 class TerrariaItem(Item):
     game = "Terraria"
 
+
 class TerrariaLocation(Location):
     game = "Terraria"
 
-def get_items_locations(goal, achievements_opt, extra_checks):
+
+def get_items_locations(multiworld, player):
+
+    goal = multiworld.goal[player].value
+    achievements_opt = multiworld.achievements[player].value
+
     items = prehardmode_items.copy()
     if goal > 0:
         items += post_wall_of_flesh_items
@@ -352,14 +481,25 @@ def get_items_locations(goal, achievements_opt, extra_checks):
     if goal > 2 and achievements_opt > 0:
         locations += post_moon_lord_achievements
 
-    # Subtract one from location counts, since the goal does not need an associated item
-    if extra_checks == 1 and len(items) < len(locations) - 1:
-        if len(locations) - len(items) - 1 < len(item_items):
-            items += item_items[:len(locations) - len(items) - 1]
-        else:
-            items += item_items
+    base_item_list = base_items.copy()
+    combination_item_list = combination_items.copy()
 
-    if len(items) < len(locations) - 1:
-        items += ["50 Silver"] * (len(locations) - len(items) - 1)
+    choices = [base_item_list, combination_item_list, ["50 Silver"]]
+    weights = [multiworld.basic_items_weight[player].value, multiworld.combination_accessory_weight[player].value,
+               multiworld.fifty_silver_weight[player].value]
+    guaranteed_items = list(multiworld.guaranteed_items[player].value)
+    # sort before shuffling to ensure no unpredictable results from the set
+    guaranteed_items.sort()
+    multiworld.random.shuffle(guaranteed_items)
+
+    while len(items) < len(locations) - 1:
+        if guaranteed_items:
+            items.append(guaranteed_items.pop())
+        else:
+            if len(choices[0]) == 0:
+                weights[0] = 0
+            if len(choices[1]) == 0:
+                weights[1] = 0
+            items.append(multiworld.random.choice(multiworld.random.choices(choices, weights, k=1)[0]))
 
     return items, locations
