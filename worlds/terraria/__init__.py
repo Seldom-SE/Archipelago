@@ -1,6 +1,6 @@
 from worlds.AutoWorld import WebWorld, World
 from worlds.generic.Rules import add_rule
-from BaseClasses import Region, RegionType, ItemClassification, Tutorial
+from BaseClasses import Region, ItemClassification, Tutorial
 from .Checks import item_name_to_id, location_name_to_id, TerrariaItem, TerrariaLocation, precollected, get_items_locations
 from .Options import options
 from .Rules import get_rules
@@ -57,7 +57,7 @@ class TerrariaWorld(World):
         return TerrariaItem(name, classification, item_name_to_id[name], self.player)
 
     def create_regions(self) -> None:
-        menu = Region("Menu", RegionType.Generic, "Menu", self.player, self.multiworld)
+        menu = Region("Menu", self.player, self.multiworld)
 
         for location in self.ter_locations:
             menu.locations.append(TerrariaLocation(self.player, location, location_name_to_id[location], menu))
