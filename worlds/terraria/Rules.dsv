@@ -1,3 +1,5 @@
+// TODO Boss/event summon items
+
 // Starting gear
 Guide;                              Npc;
 
@@ -241,7 +243,7 @@ Where's My Honey?;                  Achievement;
 Queen Bee;                          Location | Item;
 Bee Keeper;                         ;                                           #Queen Bee;
 Bee Wax;                            ;                                           #Queen Bee;
-Bee Armor;                          Armor Minions(2);                           Bee Wax;
+Bee Armor;                          Armor Minions(2) | Shimmer;                 Anvil & *Bee Wax;
 Not the Bees!;                      Achievement;                                #Queen Bee & Bee Armor;
 Witch Doctor;                       Npc;                                        Queen Bee;
 Pygmy Necklace;                     Minions(1);                                 Witch Doctor | (@calamity & Statis' Blessing);
@@ -250,47 +252,47 @@ Pygmy Necklace;                     Minions(1);                                 
 The Hive Mind;                      Calamity | Location | Item;
 The Perforators;                    Calamity | Location | Item;
 Blood Sample;                       Calamity;                                   #The Perforators;
-Aerialite Ore;                      Calamity;                                   The Hive Mind | The Perforators | Cobalt Ore | Aerialite Bar; // No pick needed; can be fished
-Aerialite Bar;                      Calamity;                                   Aerialite Ore | Feather Crown;
+Aerialite Ore;                      Calamity;                                   ((The Hive Mind | The Perforators) & (Sky Crate | Azure Crate | @pickaxe(65))) | (Cobalt Ore & Shimmer);
+Aerialite Bar;                      Calamity | Shimmer;                         Furnace & *Aerialite Ore;
 Aerial Hamaxe;                      Calamity | Hammer(70);                      Aerialite Bar;
 Skyfringe Pickaxe;                  Calamity | Pickaxe(75);                     Aerialite Bar;
 Aerospec Armor;                     Calamity | Armor Minions(1);                Aerialite Bar;
-Feather Crown;                      Calamity;                                   Aerialite Bar | Moonstone Crown;
+Feather Crown;                      Calamity | Shimmer;                         Sky Mill & *Gold Crown & *Aerialite Bar & *Feather;
 
 // Skeletron
 Skeletron;                          Location | Item;
 Clothier;                           Npc;                                        Skeletron;
 Dungeon;                            ;                                           Skeletron;
 Dungeon Heist;                      Achievement;                                Dungeon;
-Bone;                               ;                                           Dungeon | (@calamity & (#Skeletron | (@getfixedboi & #Ravager) | Mirage Mirror));
-Mirage Mirror;                      Calamity;                                   (Tinkerer's Workshop & Bone) | Abyssal Mirror;
-Tally Counter;                      ;                                           Dungeon;
-R.E.K. 3000;                        ;                                           Tinkerer's Workshop & Radar & Tally Counter & Lifeform Analyzer;
-PDA;                                ;                                           Tinkerer's Workshop & GPS & R.E.K. 3000 & Goblin Tech & Fish Finder;
-Cell Phone;                         ;                                           (Tinkerer's Workshop & Magic Mirror & PDA) | (@getfixedboi & @calamity & #Polterghast);
+Bone;                               ;                                           Angry Bones | Cursed Skull | Dragon Skull | Dark Caster | (@calamity & (#Skeletron | (@getfixedboi & #Ravager)));
+Mirage Mirror;                      Calamity | Shimmer;                         Tinkerer's Workshop & (*Magic Mirror | Ice Mirror) & *Bone;
+Tally Counter;                      ;                                           Angry Bones & Cursed Skull & Dark Caster;
+R.E.K. 3000;                        Shimmer;                                    Tinkerer's Workshop & *Radar & *Tally Counter & *Lifeform Analyzer;
+PDA;                                Shimmer;                                    Tinkerer's Workshop & *GPS & *R.E.K. 3000 & *Goblin Tech & *Fish Finder;
+Cell Phone;                         Shimmer;                                    (Tinkerer's Workshop & (*Magic Mirror | Ice Mirror) & *PDA) | (@getfixedboi & @calamity & #Polterghast);
 Black Mirror;                       Achievement | Grindy;                       Cell Phone;
-Bewitching Table;                   Minions(1);                                 Dungeon | (Witch Doctor & Wizard) | Alchemy Table;
-Alchemy Table;                      ;                                           Dungeon | Bewitching Table;
+Bewitching Table;                   Minions(1);                                 Dungeon | (Witch Doctor & Wizard) | (Shimmer & Alchemy Table);
+Alchemy Table;                      ;                                           Dungeon | (Shimmer & Bewitching Table);
 Mechanic;                           ;                                           Dungeon;
-Wire;                               ;                                           Mechanic | (@calamity & Electrician's Glove);
-Decryption Computer;                Calamity;                                   Mysterious Circuitry & Dubious Plating & Wire;
+Wire;                               ;                                           Mechanic;
+Decryption Computer;                Calamity | Shimmer;                         Anvil & *Mysterious Circuitry & *Dubious Plating & *Wire & *Copper Bar & *Glass;
 Actuator;                           ;                                           Mechanic;
-Muramasa;                           ;                                           Dungeon;
-Cobalt Shield;                      ;                                           Dungeon | (@calamity & Cobalt Bar);
-Obsidian Shield;                    ;                                           Tinkerer's Workshop & Cobalt Shield & Obsidian Skull;
-Elder Slime;                        Npc;                                        Skeletron & Dungeon;
+Muramasa;                           Shimmer;                                    ((Dungeon Chest | Golden Lock Box) & Golden Key) | (@calamity & Anvil & *Aerialite Bar & *Bone);
+Cobalt Shield;                      Shimmer;                                    ((Dungeon Chest | Golden Lock Box) & Golden Key) | (@calamity & Anvil & *Cobalt Bar);
+Obsidian Shield;                    Shimmer;                                    Tinkerer's Workshop & *Cobalt Shield & *Obsidian Skull;
+Elder Slime;                        Npc;                                        Skeletron & Golden Key;
 
 // Deerclops
 Deerclops;                          Location | Item;
 
 // The Slime God
-The Slime God;                      Calamity | Location | Item;                 Blighted Gel;
-Purified Gel;                       Calamity;                                   #The Slime God | Jelly-Charged Battery;
+The Slime God;                      Calamity | Location | Item;                 Overloaded Sludge;
+Purified Gel;                       Calamity;                                   #The Slime God;
 Jelly-Charged Battery;              Calamity | Shimmer;                         Anvil & *Wulfrum Battery & *Voltaic Jelly & *Purified Gel & *Stormlion Mandible;
-Static Refiner;                     Calamity;                                   Purified Gel & Solidifier;
-Gelpick;                            Calamity | Pickaxe(100);                    Static Refiner & Purified Gel & Blighted Gel;
-Statigel Armor;                     Calamity | Armor Minions(1);                Static Refiner & Purified Gel & Blighted Gel;
-Night's Edge;                       ;                                           Evil Sword & Muramasa & Blade of Grass & Volcano & (~@calamity | Purified Gel);
+Static Refiner;                     Calamity | Shimmer;                         Anvil & *Purified Gel & *Solidifier;
+Gelpick;                            Calamity | Pickaxe(100) | Shimmer;          Static Refiner & *Purified Gel & *Blighted Gel;
+Statigel Armor;                     Calamity | Armor Minions(1) | Shimmer;      Static Refiner & *Purified Gel & *Blighted Gel;
+Night's Edge;                       Shimmer;                                    ((*Light's Bane | *Blood Butcherer) & *Muramasa & *Blade of Grass & *Volcano & (~@calamity | *Purified Gel));
 
 // Wall of Flesh
 Wall of Flesh;                      Location | Item(Hardmode);                  Guide;
@@ -375,7 +377,7 @@ Mythril Ore;                        ;                                           
 Mythril Bar;                        ;                                           Mythril Ore | Wall of Flesh | (@calamity & Electrician's Glove);
 Hardmode Anvil;                     ;                                           Mythril Bar;
 Mythril Pickaxe;                    Pickaxe(150);                               Hardmode Anvil & Mythril Bar;
-Electrician's Glove;                Calamity;                                   (Hardmode Anvil & Wire & Mythril Bar) | Nanotech;
+Electrician's Glove;                Calamity | Shimmer;                         Hardmode Anvil & (Bloodstained Glove | *Filthy Glove) & *Wire & *Mythril Bar;
 Adamantite Ore;                     ;                                           (((~@calamity & Altar) | (@calamity & @mech_boss(2))) & @pickaxe(150)) | Wall of Flesh | (~@calamity & Chlorophyte Ore) | Adamantite Bar | (@calamity & Hallowed Ore);
 Hardmode Forge;                     ;                                           Hardmode Anvil & Adamantite Ore & Hellforge Item;
 Adamantite Bar;                     ;                                           (Hardmode Forge & Adamantite Ore) | Wall of Flesh;
@@ -456,7 +458,7 @@ Plantera;                           Location | Item | Goal;                     
 Ashes of Calamity;                  Calamity;                                   #Calamitas Clone | Sigil of Calamitas;
 Depth Cells;                        Calamity;                                   Calamitas Clone | Abyssal Mirror;
 Lumenyl;                            Calamity;                                   Calamitas Clone | Abyssal Mirror;
-Abyssal Mirror;                     Calamity;                                   (Hardmode Anvil & Mirage Mirror & Ink Bomb & Depth Cells & Lumenyl) | Eclipse Mirror;
+Abyssal Mirror;                     Calamity | Shimmer;                         Hardmode Anvil & *Mirage Mirror & *Ink Bomb & *Depth Cells & *Lumenyl;
 Fathom Swarmer Armor;               Calamity | Armor Minions(2);                Hardmode Anvil & Sea Remains & Depth Cells;
 
 // Plantera
@@ -618,7 +620,7 @@ Luminite Pickaxe;                   Pickaxe(225);                               
 Genesis Pickaxe;                    Calamity | Pickaxe(225);                    Ancient Manipulator & Meld Construct & Luminite Bar;
 Stardust Armor;                     Armor Minions(5);                           Ancient Manipulator & Fragment & Luminite Bar;
 Asteroid Staff;                     Calamity | Shimmer;                         (Ancient Manipulator & *Meteor Staff & *Luminite Bar) | (@getfixedboi & #Astrum Aureus);
-Moonstone Crown;                    Calamity;                                   (Ancient Manipulator & Feather Crown & Luminite Bar & Galactica Singularity) | Nanotech;
+Moonstone Crown;                    Calamity | Shimmer;                         Ancient Manipulator & *Feather Crown & *Luminite Bar & *Galactica Singularity;
 Terrarian;                          ;                                           #Moon Lord;
 Sick Throw;                         Achievement;                                Terrarian;
 Meowmere;                           ;                                           #Moon Lord;
@@ -690,7 +692,7 @@ Silva Armor;                        Calamity | Armor Minions(5);                
 Elemental Gauntlet;                 Calamity;                                   (Cosmic Anvil & Fire Gauntlet & Luminite Bar & Galactica Singularity & Ascendant Spirit Essence) | (@getfixedboi & #Storm Weaver);
 Elemental Quiver;                   Calamity;                                   (Cosmic Anvil & Magic Quiver & Deadshot Brooch & Luminite Bar & Galactica Singularity & Ascendant Spirit Essence) | (@getfixedboi & #Storm Weaver);
 Nucleogenesis;                      Calamity | Shimmer;                         (Cosmic Anvil & *Star-Tainted Generator & *Statis' Curse & *Luminite Bar & *Galactica Singularity & *Ascendant Spirit Essence) | (@getfixedboi & #Ceaseless Void);
-Nanotech;                           Calamity;                                   (Emblem & Raider's Talisman & Moonstone Crown & Electrician's Glove & Luminite Bar & Galactica Singularity & Ascendant Spirit Essence) | (@getfixedboi & #Signus, Envoy of the Devourer);
+Nanotech;                           Calamity | Shimmer;                         (Cosmic Anvil & *Rogue Emblem & *Raider's Talisman & *Moonstone Crown & *Electrician's Glove & *Luminite Bar & *Galactica Singularity & *Ascendant Spirit Essence) | (@getfixedboi & #Signus, Envoy of the Devourer);
 Ethereal Talisman;                  Calamity | Shimmer;                         (Cosmic Anvil & *Sigil of Calamitas & *Mana Flower & *Luminite Bar & *Galactica Singularity & *Ascendant Spirit Essence) | (@getfixedboi & #Signus, Envoy of the Devourer);
 
 // Yharon, Dragon of Rebirth
