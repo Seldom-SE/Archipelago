@@ -2,35 +2,35 @@
 
 // Starting gear
 Copper Shortsword;
-Guide;                              Npc;
 
 // Immediately accessible
-Squire Slime;                       Npc;
-Traveling Merchant;                 ;                                           @npc(2);
-Lifeform Analyzer;                  ;                                           Traveling Merchant;
-DPS Meter;                          ;                                           Traveling Merchant | (@calamity & Wire);
-Stopwatch;                          ;                                           Traveling Merchant;
-Timber!!;                           Achievement | Early;
-Benched;                            Achievement | Early;
-Stop! Hammer Time!;                 Achievement | Early;
-Matching Attire;                    Achievement | Early;
-Fashion Statement;                  Achievement | Early;
-Ooo! Shiny!;                        Achievement | Early;
-No Hobo;                            Achievement | Early; // When NPC shuffling is added, this shouldn't be considered early
-Merchant;                           Npc;
-Bug Net;                            ;                                           @calamity | Merchant;
-Heavy Metal;                        Achievement | Early;
-Dye Trader;                         Npc;                                        @npc(4);
-Dye Hard;                           Achievement;                                Dye Trader;
-Demolitionist;                      Npc;                                        Merchant;
+Guide;                              Npc;                                        House;
+Squire Slime;                       Npc;                                        (Jungle Slime | Yellow Slime | Red Slime | Purple Slime | Black Slime | Baby Slime | Pinky | Green Slime | Blue Slime | White Present Slime | Green Present Slime | Red Present Slime | Bunny Slime | Yellow Present Slime) & (Copper Helmet | Copper Shortsword);
+Traveling Merchant;                 ;                                           @npc(2); // TODO What kinds of NPCs
+Lifeform Analyzer;                  ;                                           Traveling Merchant & Coin;
+DPS Meter;                          ;                                           (Traveling Merchant & Coin) | (@calamity & Anvil & Wire & Any Gold Bar);
+Stopwatch;                          ;                                           Traveling Merchant & Coin;
+Timber!!;                           Achievement | Early;                        (Wood | Boreal Wood | Palm Wood | Rich Mahogany | Ebonwood | Shadewood | Ash Wood | Pearlwood | Dynasty Wood | Spooky Wood) // TODO Does it count modded woods?
+Benched;                            Achievement | Early;                        Craft Nebula Work Bench | Craft Solar Work Bench | Craft Stardust Work Bench | Craft Vortex Work Bench | Craft Bone Work Bench | Craft Ash Wood Work Bench | Craft Balloon Work Bench | Craft Bamboo Work Bench | Craft Boreal Wood Work Bench | Craft Cactus Work Bench | Craft Crystal Work Bench | Craft Dynasty Work Bench | Craft Ebonwood Work Bench | Craft Granite Work Bench | Craft Marble Work Bench | Craft Martian Work Bench | Craft Meteorite Work Bench | Craft Mushroom Work Bench | Craft Palm Wood Work Bench | Craft Pearlwood Work Bench | Craft Pumpkin Work Bench | Craft Reef Wok Bench | Craft Rich Mahogany Work Bench | Craft Sandstone Work Bench | Craft Shadewood Work Bench | Craft Spider Work Bench | Craft Spooky Work Bench | Craft Work Bench | Craft Lesion Work Bench | Craft Flesh Work Bench | Craft Glass Work Bench | Craft Honey Work Bench | Craft Frozen Work Bench | Craft Living Wood Work Bench | Craft Skyware Work Bench | Craft Slime Work Bench | Craft Steampunk Work Bench; // TODO Does it count modded workbenches? Do you really have to craft them?
+Stop! Hammer Time!;                 Achievement | Early;                        Wooden Hammer | Rich Mahogany Hammer | Palm Wood Hammer | Boreal Wood Hammer | Copper Hammer | Tin Hammer | Iron Hammer | Ebonwood Hammer | Shadewood Hammer | Lead Hammer | Ash Wood Hammer | Silver Hammer | Tungsten Hammer | Gold Hammer | The Breaker | Pearlwood Hammer | Flesh Grinder | Platinum Hammer | Meteor Hamaxe | Rockfish | Molten Hamaxe | Pwnhammer | Haemorrhaxe | Hammush | Chlorophyte Warhammer | Chlorophyte Jackhammer | Spectre Hamaxe | Solar Flare Hamaxe | Vortex Hamaxe | Nebula Hamaxe | Stardust Hamaxe | The Axe | Paladin's Hammer; // TODO Does it count modded hammers? Do you only have to obtain them?
+Matching Attire;                    Achievement | Early;                        @helmet & @chestplate & @greaves; // TODO Does this count modded armors
+Fashion Statement;                  Achievement | Early;                        (@helmet | @vanity_helmet) & (@chestplate | @vanity_chestplate) & (@greaves | @vanity_greaves);
+Ooo! Shiny!;                        Achievement | Early;                        Mine Copper Ore | Mine Iron Ore | Mine Silver Ore | Mine Gold Ore | Mine Tin Ore | Mine Lead Ore | Mine Tungsten Ore | Mine Platinum Ore | Mine Demonite Ore | Mine Crimtane Ore | Mine Hellstone | Mine Cobalt Ore | Mine Mythril Ore | Mine Adamantite Ore | Mine Palladium Ore | Mine Orichalcum Ore | Mine Titanium Ore | Mine Chlorophyte Ore;
+No Hobo;                            Achievement | Early;                        @npc(1);
+Merchant;                           Npc;                                        Coin & House;
+Bug Net;                            ;                                           (Merchant & Coin) | (@calamity & Anvil & Cobweb & Any Copper Bar);
+Heavy Metal;                        Achievement | Early;                        Iron Anvil | Lead Anvil; // TODO Just these? Just obtaining?
+Dye Trader;                         Npc;                                        @npc(4) & (@dye | @dye plant | Strange Plant | Dye Vat) & House; // TODO Modded dyes and dye plants?
+Dye Hard;                           Achievement;                                @dye; // TODO Modded dyes?
+Demolitionist;                      Npc;                                        Merchant & (Bomb | Dynamite | Grenade | Sticky Bomb | Beenade | Smoke Bomb | Sticky Grenade | Bouncy Bomb | Bouncy Grenade | Bomb Fish | Bouncy Dynamite | Scarab Bomb | Wet Bomb | Lava Bomb | Honey Bomb | Dry Bomb | Dirt Bomb | Sticky Dirt Bomb) & House;
 Lucky Break;                        Achievement | Early;
-Star Power;                         Achievement | Early;
-You Can Do It!;                     Achievement | Early;
-Wulfrum Battery;                    Calamity;
-Wulfrum Armor;                      Calamity | Armor Minions(1);
+Star Power;                         Achievement | Early;                        Mana Crystal;
+You Can Do It!;                     Achievement | Early;                        Night; // TODO Check
+Wulfrum Battery;                    Calamity;                                   Wulfrum Amplifier | Wulfrum Drone | Wulfrum Gyrator | Wulfrum Hovercraft | Wulfrum Rover;
+Wulfrum Armor;                      Calamity | Armor Minions(1);                Anvil & Wulfrum Metal Scrap & Energy Core;
 
 // Surface exploration
-Cactus;
+Cactus;                                                                         (@axe & Desert) | Cactus Platform | Pumpkin | (Work Bench & Cactus Wall); // TODO All shimmer recipes
 Unusual Survival Strategies;        Achievement | Early;
 Aglet;
 Radar;
